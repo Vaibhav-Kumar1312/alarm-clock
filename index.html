@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="clock-container">
+      <div class="imgClock">
+        <img src="alarm-clock.png" alt="clock" class="clockImg" />
+      </div>
+      <div class="display-clock">00:00:00</div>
+      <div class="setAlarmContainer">
+        <div class="inputs">
+          <input
+            type="number"
+            id="hourInput"
+            min="0"
+            max="23"
+            placeholder="00"
+          />
+          <input
+            type="number"
+            id="minuteInput"
+            min="0"
+            max="59"
+            placeholder="00"
+          />
+        </div>
+        <button class="setAlarm">Add Alarm</button>
+        <div class="activeAlarms"></div>
+      </div>
+    </div>
+  </body>
+</html>

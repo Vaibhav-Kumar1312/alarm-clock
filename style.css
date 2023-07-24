@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+.hidden {
+  display: none;
+}
+
+.clock-container {
+  width: 40vw;
+  padding: 50px 20px;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.imgClock {
+  text-align: center;
+  margin: 0 auto 4px auto;
+}
+.clockImg {
+  height: 25%;
+  width: 25%;
+  mix-blend-mode: multiply;
+}
+.display-clock {
+  font-size: 40px;
+  text-align: center;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.inputs input {
+  width: 50px;
+  font-size: 24px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 4px 3px;
+}
+.setAlarm {
+  background-color: #377dff;
+  border: none;
+  border-radius: 2em;
+  padding: 10px 16px;
+  display: block;
+  margin: 24px auto 0 auto;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.alarm {
+  margin: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr;
+  gap: 6px;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #f1efef;
+  box-shadow: inset 5px 5px 7px #cac9c9, inset -5px -5px 7px #ffffff;
+}
+.alarm span {
+  font-size: large;
+}
+
+.alarm input[type="checkbox"] {
+  appearance: none;
+  height: 17px;
+  width: 32px;
+  background-color: #e2e2ec;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.alarm input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: darkcyan;
+  top: 2.5px;
+  left: 2px;
+}
+
+.alarm input[type="checkbox"]:checked {
+  background-color: #377dff;
+}
+
+.alarm input[type="checkbox"]:checked::before {
+  background-color: #ffffff;
+  left: 18px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
