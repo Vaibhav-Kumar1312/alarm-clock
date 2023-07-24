@@ -1,2 +1,2 @@
 # alarm-clock
-This application lets set alarm 
+Single page application lets you set an alarm
