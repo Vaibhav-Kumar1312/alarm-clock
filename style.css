@@ -5,6 +5,7 @@
 }
 body {
   background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 .hidden {
   display: none;
@@ -73,6 +74,7 @@ body {
 }
 .alarm span {
   font-size: large;
+  font-weight: bold;
 }
 
 .alarm input[type="checkbox"] {
