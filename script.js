@@ -169,9 +169,9 @@ function startAlarm(e) {
 
 /**
  * To stop the alarm
- * @param {event object} e
+ * @param {event object} event
  */
-function stopAlarm(e) {
+function stopAlarm(event) {
   let searchID = e.target.parentElement.getAttribute("data-id");
   let [exists, obj, index] = searchAlarmObject("id", searchID);
   if (exists) {
